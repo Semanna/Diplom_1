@@ -11,10 +11,16 @@ public class BunTest {
     private static final float DELTA = 0.01f;
 
     @Test
-    public void shouldReturnNameAndPrice() {
+    public void shouldReturnName() {
         Bun bun = new Bun(NAME, PRICE);
 
         assertEquals(NAME, bun.getName());
+    }
+
+    @Test
+    public void shouldReturnPrice() {
+        Bun bun = new Bun(NAME, PRICE);
+
         assertEquals(PRICE, bun.getPrice(), DELTA);
     }
 }
